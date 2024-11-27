@@ -51,10 +51,11 @@ const Votes = ({
   const handleVote = async (action: string) => {
     if (!userId) {
       return toast({
-        title: "Please login to vote",
-        description: "You musk logged in to perform this action",
+        title: "Please log in",
+        description: "You must be logged in to perform this action",
       });
     }
+
     if (action === "upvote") {
       if (type === "Question") {
         await upVoteQuestion({
@@ -75,10 +76,11 @@ const Votes = ({
       }
 
       return toast({
-        title: `Upvote ${hasdownVoted ? "SuccessFully" : "Removed"}`,
-        variant: !hasdownVoted ? "default" : "destructive",
+        title: `Upvote ${!hasupVoted ? "Successful" : "Removed"}`,
+        variant: !hasupVoted ? "default" : "destructive",
       });
     }
+
     if (action === "downvote") {
       if (type === "Question") {
         await downVoteQuestion({
@@ -97,9 +99,10 @@ const Votes = ({
           path: pathname,
         });
       }
+
       return toast({
-        title: `Downvote ${hasdownVoted ? "SuccessFul" : "Removed"}`,
-        variant: !hasdownVoted ? "default" : "destructive",
+        title: `Downvote ${!hasupVoted ? "Successful" : "Removed"}`,
+        variant: !hasupVoted ? "default" : "destructive",
       });
     }
   };
