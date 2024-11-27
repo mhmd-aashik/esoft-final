@@ -20,7 +20,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "DevFlow",
+  title: "Debug Hub",
   description:
     "A community for developers to share their knowledge and ask questions.",
   icons: {
