@@ -1,4 +1,3 @@
-import FeedBack from "@/components/FeedBack";
 import LeftSideBar from "@/components/shared/LeftSideBar";
 import Navbar from "@/components/shared/navbar/Navbar";
 import RightSidebar from "@/components/shared/RightSidebar";
