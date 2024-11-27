@@ -18,9 +18,9 @@ import type { Metadata } from "next";
 import { auth } from "@clerk/nextjs";
 
 export const metadata: Metadata = {
-  title: "Home | DevFlow",
+  title: "Home | Debug Hub",
   description:
-    "DevFlow is a platform for developers to ask and answer questions. It is a place for developers to share their knowledge and help each other.",
+    "Debug Hub is a platform for developers to ask and answer questions. It is a place for developers to share their knowledge and help each other.",
 };
 
 export default async function Home({ searchParams }: SearchParamsProps) {

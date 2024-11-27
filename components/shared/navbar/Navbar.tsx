@@ -14,7 +14,7 @@ const Navbar = () => {
           src="/assets/images/site1.png"
           width={63}
           height={63}
-          alt="DevFlow"
+          alt="debughub"
         />
         <p className="h2-bold font-spaceGrotesk text-dark-100 dark:text-light-900 max-sm:hidden">
           Debug <span className="font-serif text-primary-500">Hub</span>
