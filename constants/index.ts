@@ -13,6 +13,12 @@ export const sidebarLinks: SidebarLink[] = [
     label: "Home",
   },
   {
+    imgURL: "/assets/icons/edit.svg",
+    route:
+      "https://docs.google.com/forms/d/e/1FAIpQLScVdpJMC_Qxvxk1bWEfGk2v-l6gZJLfMMbj2GT73FuoE_57CQ/viewform?pli=1",
+    label: "Feedback",
+  },
+  {
     imgURL: "/assets/icons/users.svg",
     route: "/community",
     label: "Community",
