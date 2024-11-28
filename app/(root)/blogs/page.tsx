@@ -1,8 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { getAllBlogs } from "@/lib/actions/blog.action";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Blog | Debug Hub",
+  description:
+    "Debug Hub is a platform for developers to ask and answer questions. It is a place for developers to share their knowledge and help each other.",
+};
 
 const BlogPage = async () => {
   const result = await getAllBlogs();

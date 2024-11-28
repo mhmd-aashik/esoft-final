@@ -1,11 +1,17 @@
 import PopUpCard from "@/components/cards/PopUpCard";
 import { Button } from "@/components/ui/button";
 import { GellAllMeme } from "@/lib/actions/meme.action";
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Meme | Debug Hub",
+  description:
+    "Debug Hub is a platform for developers to ask and answer questions. It is a place for developers to share their knowledge and help each other.",
+};
 
 const MemePage = async () => {
   const result = await GellAllMeme();
-
 
   return (
     <div>

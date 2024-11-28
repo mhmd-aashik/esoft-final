@@ -79,7 +79,7 @@ const GlobalSearch = () => {
             if (!isOpen) setIsOpen(true);
             if (e.target.value === "" && isOpen) setIsOpen(false);
           }}
-          className="paragraph-regular no-focus placeholder  border-none bg-transparent shadow-none outline-none"
+          className="paragraph-regular no-focus placeholder border-none  bg-transparent shadow-none outline-none dark:text-white"
         />
       </div>
       {isOpen && <GlobalResult />}
